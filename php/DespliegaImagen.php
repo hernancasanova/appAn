@@ -6,15 +6,11 @@
 </head>
 <body>
 	<img id="ImgAnimalSelec" src="ObtieneImagen.php?id=<?php echo $_POST['number']; ?>" width="300px" height="300px"  / >
-	<?php ?>
 	<div id="InfoAnimal">
 		Nombre:<br>;
 		Número:<br>
-		Fecha Nacimiento: <br>
+		Fecha nacimiento estimada: <br>
 		Estado: <br>
 	</div>
-	<script type="text/javascript">
-		
-	</script>
 </body>
 </html>
