@@ -34,7 +34,7 @@ if ($mysqli->connect_errno) {
 			echo "$mysqli->error($insert2)<br>";
 		}
 		else{
-			echo "Se ha ingresado el animal correctamente";
+			echo "<h1><center>Se ha ingresado el animal correctamente</center></h1>";
 		}
 	}
 	else{//CUANDO CHECK ES FALSE
