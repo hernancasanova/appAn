@@ -1,0 +1,323 @@
+body {
+  font-family:"Montserrat",Helvetica,Arial,sans-serif;
+  font-size:14px;
+  line-height:1.42857143;
+  color:#333;
+  background-color:#fff;
+}
+
+
+
+p {
+  font-weight:500;
+  font-size:15px;
+  color:white;
+  margin:0px;
+  padding:30px 0px 0px 0px;
+  text-align:justify;
+}
+
+/*.h1, h1 {
+  font-size:36px;
+  color:white;
+  font-size:59px;
+  letter-spacing:-2px;
+  line-height:85%;
+  padding-left:14px;
+  font-weight:900;
+  color:white;
+}*/
+
+h1 {
+  font-size:44px;
+  letter-spacing:-2px;
+  line-height:85%;
+  padding-left:14px;
+  font-weight:200;
+  color:black;
+}
+
+.btn.btn-primary {
+  font-weight:bold;
+  padding:5px 80px;
+  border-radius:50px;
+  background:#9FCB3E;
+  border:1px solid #9FCB3E;
+  margin-top:11%;
+  color:white;
+}
+
+.navbar-brand {
+  padding:0px;
+}
+
+.logo img {
+  width:116px;
+}
+
+#menu-wing {
+  height:44px;
+}
+
+.navbar.navbar-default {
+  border-bottom:5px solid #EE1F1F;
+}
+
+.logo {
+  padding:0px 0px 0px 10px;
+}
+
+.navbar {
+  position:relative;
+  min-height:50px;
+  margin-bottom:0px;
+  border:1px solid transparent;
+}
+
+#modulos {
+  width:100%;
+  padding:100px 0px;
+}
+
+.gpssmart {
+  background:#ED1C24;
+}
+
+.gpssmart img {
+  display:block;
+  margin:0px auto;
+}
+
+.bussiness {
+  background:#A9C61A;
+}
+
+.bussiness img {
+  display:block;
+  margin:0px auto;
+}
+
+.ledc {
+  background:#009CCE;
+}
+
+.ledc img {
+  display:block;
+  margin:0px auto;
+}
+
+.fores {
+  background:#6DAB24;
+}
+
+.fores img {
+  display:block;
+  margin:0px auto;
+}
+
+.fuel {
+  background:#004A6B;
+}
+
+.fuel img {
+  display:block;
+  margin:0px auto;
+}
+
+#gps-btn {
+  background:white;
+  border:1px solid white;
+  color:#ED1C24;
+}
+
+#gps-btn:hover {
+  background:none;
+  border:1px solid white;
+  color:white;
+}
+
+#business-btn {
+  background:white;
+  border:1px solid white;
+  color:#A9C61A;
+}
+
+#business-btn:hover {
+  background:none;
+  border:1px solid white;
+  color:white;
+}
+
+#ledc-btn {
+  background:white;
+  border:1px solid white;
+  color:#009CCE;
+}
+
+#ledc-btn:hover {
+  background:none;
+  border:1px solid white;
+  color:white;
+}
+
+#fores-btn {
+  background:white;
+  border:1px solid white;
+  color:#6DAB24;
+}
+
+#fores-btn:hover {
+  background:none;
+  border:1px solid white;
+  color:white;
+}
+
+#fuel-btn {
+  background:white;
+  border:1px solid white;
+  color:#004A6B;
+}
+
+#fuel-btn:hover {
+  background:none;
+  border:1px solid white;
+  color:white;
+}
+
+.titulos-producto {
+  text-align:center;
+  margin:50px;
+  color:#424142;
+  font-family:'Montserrat', sans-serif;
+  font-weight:600;
+  font-size:35px;
+}
+
+.login-header img {
+  width:130px;
+  position:relative;
+  margin:0px 31%;
+}
+
+.input-lg {
+  width:100%;
+}
+
+.modal-body p {
+  text-align:center;
+  padding:10px 0px 10px 0px;
+}
+
+.titulos {
+  text-align:center;
+  margin:50px;
+  color:white;
+  font-family:'Montserrat', sans-serif;
+  font-weight:600;
+  font-size:35px;
+}
+
+.p-secciones {
+  padding:0px;
+}
+
+.titulos-contacto {
+  text-align:center;
+  margin:50px;
+  color:grey;
+  font-family:'Montserrat', sans-serif;
+  font-weight:600;
+  font-size:35px;
+}
+
+.contacto {
+  background:white;
+}
+
+a.list-group-item, button.list-group-item {
+  border:none;
+}
+
+#contact-inf {
+  text-align:center;
+  padding:10px 5px;
+}
+
+.contact-icon {
+  font-size:35px;
+  color:white;
+  background:#EE1F1F;
+  padding:30px;
+  border-radius:100%;
+}
+
+.contact-title {
+  color:#777777;
+  font-size:21px;
+  font-family:'Montserrat', sans-serif;
+  font-weight:600;
+}
+
+.contact-p {
+  font-weight:500;
+  font-size:14px;
+  color:#777777;
+  margin:0px;
+  padding:9px 0px 0px 0px;
+  text-align:center;
+}
+
+#contact-btn {
+  background:#EE1F1F;
+  border:1px solid white;
+  color:white;
+}
+
+#contact-btn:hover {
+  background:none;
+  border:1px solid #EE1F1F;
+  color:#EE1F1F;
+}
+
+.navbar-fixed-top {
+  position:fixed;
+  top:0;
+  border-width:0 0 1px;
+}
+
+#productos {
+  height:42px;
+  background:white;
+}
+
+#modal-campos {
+  width:50%;
+  float:left;
+  padding:5px;
+}
+
+@media (max-width:767px) {
+  #modal-campos {
+    width:100%;
+    float:left;
+    padding:5px;
+  }
+}
+
+.control-label.modal-label {
+  font-size:12px;
+  color:#777777;
+}
+
+#modal-btn {
+  background:#EE1F1F;
+  border:1px solid white;
+  color:white;
+  margin:0px;
+}
+
+#modal-btn:hover {
+  background:none;
+  border:1px solid #EE1F1F;
+  color:#EE1F1F;
+}
