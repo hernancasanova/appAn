@@ -87,7 +87,10 @@
 	<!--div class="jumbotron text-center">Formulario de Ingreso</div-->
 	<section id="container">
 		<div id="izquierda">
-			<form action="./php/Ingreso.php" target="_self" method="POST" enctype="multipart/form-data">
+			<center><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalForm">Abrir formulario de Ingreso</button><br><br>
+			<a href="Listado.html"><button class="btn btn-primary">Abrir listado de animales</button></a>
+			</center>
+			<!--form action="./php/Ingreso.php" target="_self" method="POST" enctype="multipart/form-data">
 				<div id="VistaPrevia">
 					<label for="btnSelecFoto" id="label-image">Escoge archivo</label>
 					<input type="file" id="btnSelecFoto" name="myimage" required >
@@ -110,14 +113,52 @@
 					<label>Estado</label><br>
 					<input id="btnRegAn" class="btn-success" type="submit" value="Registrar"><br>
 			 	</div>
-			</form>
+			</form-->
+			<div class="modal fade" id="modalForm" tabindex="-1" role="dialog"> 
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">	
+						<div class="modal-header">
+							<h5 class="modal-title">Formulario de Ingreso</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          				<span aria-hidden="true">&times;</span>
+	        				</button>
+						</div>
+						<div class="modal-body">
+							<form action="./php/Ingreso.php" target="_self" method="POST" enctype="multipart/form-data">
+								<div id="VistaPrevia">
+									<label for="btnSelecFoto" id="label-image">Escoge archivo</label>
+									<input type="file" id="btnSelecFoto" name="myimage" required >
+								</div><br>
+								<input id="Numero" name="numero" type="text" required><label>&nbsp;Número</label><br>
+								<input id="Nombre" name="nombre" type="text" required><label>&nbsp;Nombre</label><br>
+								<input id="FechNacim" name="fechaNacim" type="date" required><label>&nbsp;Fecha de nacimiento</label><br>
+								<select id="Sexo" name="sexo">
+									<option value="Macho">Macho</option>
+									<option value="Hembra">Hembra</option>
+								</select><label>&nbsp;Sexo</label><br>
+								<input id="Raza" name="raza" type="text" required><label>Raza</label><br>
+								<select id="Estado" name="estado">
+									<option value="Vivo">Vivo</option>
+									<option value="Muerto">Muerto</option>
+									<option value="Vendido">Vendido</option>
+									<option value="Comprado">Comprado</option>
+								</select>
+								<label>&nbsp;Estado</label>
+						</div>
+						<div class="modal-footer">
+								<input id="btnRegAn" class="btn-success" type="submit" value="Registrar">		
+								</form>				
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	 	<div id="derecha">
 		<form method="POST" action="./php/DespliegaDatosAnimal.php" >
 			<div>
 		 		<label>Ingrese número de animal a buscar</label>
 		 		<input type="text" name="number" required>
-		 		<button ><img src="images/vacuno.png" width="25px" height="25px">   Buscar animal</button>
+		 		<button class="btn btn-primary"><img src="images/vacuno.png" width="25px" height="25px">   Buscar animal</button>
 	 		</div>
 	 	</form>
 	 	</div>
