@@ -129,21 +129,38 @@
 									<label for="btnSelecFoto" id="label-image">Escoge archivo</label>
 									<input type="file" id="btnSelecFoto" name="myimage" required >
 								</div><br>
-								<input id="Numero" name="numero" type="text" required><label>&nbsp;Número</label><br>
-								<input id="Nombre" name="nombre" type="text" required><label>&nbsp;Nombre</label><br>
-								<input id="FechNacim" name="fechaNacim" type="date" required><label>&nbsp;Fecha de nacimiento</label><br>
-								<select id="Sexo" name="sexo">
-									<option value="Macho">Macho</option>
-									<option value="Hembra">Hembra</option>
-								</select><label>&nbsp;Sexo</label><br>
-								<input id="Raza" name="raza" type="text" required><label>Raza</label><br>
-								<select id="Estado" name="estado">
-									<option value="Vivo">Vivo</option>
-									<option value="Muerto">Muerto</option>
-									<option value="Vendido">Vendido</option>
-									<option value="Comprado">Comprado</option>
-								</select>
-								<label>&nbsp;Estado</label>
+								<div class="form-group">
+									<label>&nbsp;Número</label>
+									<input class="form-control" id="Numero" name="numero" type="text" required>
+								</div>
+								<div class="form-group">
+									<label>&nbsp;Nombre</label>
+									<input id="Nombre" class="form-control" name="nombre" type="text" required>
+								</div>
+								<div class="form-group">
+									<label>&nbsp;Fecha de nacimiento</label>
+									<input id="FechNacim" class="form-control" name="fechaNacim" type="date" required>
+								</div>
+								<div class="form-group">
+									<label>&nbsp;Sexo</label>
+									<select class="form-control" id="Sexo" name="sexo">
+										<option value="Macho">Macho</option>
+										<option value="Hembra">Hembra</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label>Raza</label>
+									<input id="Raza" class="form-control" name="raza" type="text" required>
+								</div>
+								<div class="form-group">
+									<label>&nbsp;Estado</label>
+									<select class="form-control" id="Estado" name="estado">
+										<option value="Vivo">Vivo</option>
+										<option value="Muerto">Muerto</option>
+										<option value="Vendido">Vendido</option>
+										<option value="Comprado">Comprado</option>
+									</select>
+								</div>
 						</div>
 						<div class="modal-footer">
 								<input id="btnRegAn" class="btn-success" type="submit" value="Registrar">		
