@@ -3,14 +3,29 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Formulario de eliminación de animales</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="icon" href="images/vacuno.png">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.mini.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	<div style="margin-left: 25%;margin-right: 25%;border: solid 1em blue;height: 500px;">
+	<!--div style="margin-left: 25%;margin-right: 25%;border: solid 1em blue;height: 500px;">
 		<form action="php/DarDeBajaAnimal.php" method="POST" enctype="multipart/form-data">
 			Ingrese número de animal a eliminar: <input type="text" placeholder="Ej: 01 284 0807" name="numero_eliminado"><br>
 			<input type="submit" value="Eliminar" >
 		</form>
+		<form action=""></form>
+	</div-->
+	<div style="margin-left: 25%;margin-right: 25%;border: solid 1em blue;height: 500px;">
+		<form action="./php/DarDeBajaAnimal.php" method="POST">
+			<div class="form-group">
+				<label for="inpEliAn">Ingrese número de animal a eliminar</label>
+				<input id="inpEliAn" type="text" class="form-control" placeholder="Ej: 01 284 0807" name="numero_eliminado">
+			</div>
+			<button type="submit" class="btn btn-danger">Eliminar</button>
+		</form>
 	</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.mini.js"></script>
 </body>
 </html>
