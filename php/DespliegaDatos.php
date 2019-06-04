@@ -26,7 +26,7 @@
 	<div id="InfoAnimal">
 		<strong>Nombre:</strong> <?php echo $nombre; ?><br>
 		<strong>Número: </strong><?php echo $numero; ?><br>
-		<strong>Fecha Nacimiento estimada: </strong><?php echo $fecha_nacimiento; ?><br>
+		<strong>Fecha de nacimiento estimada: </strong><?php echo $fecha_nacimiento; ?><br>
 		<strong>Sexo: </strong><?php echo $sexo; ?><br>
 		<strong>Raza:</strong> <?php echo $raza; ?><br>
 		<strong>Estado:</strong> <?php echo $estado; ?><br>
