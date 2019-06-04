@@ -13,7 +13,7 @@ if ($mysqli->connect_errno) {
 	//$datos=$mysqli->$ejecutar1;
 	//if (mysql_num_rows($ejecutar1)>0) {
 	if ($ejecutar1->num_rows>0) {
-		echo "<table id='tab1'><thead><tr><th>Imagen</th><th>Numero</th><th>Nombre</th><th>Fecha nacimiento</th><th>Sexo</th><th>Raza</th><th>Estado</th></tr></thead><tbody>";
+		echo "<table id='tab1'><thead><tr><th><center>Imagen</center></th><th>Numero</th><th><center>Nombre</center></th><th><center>Fecha de nacimiento estimada</center></th><th><center>Sexo</center></th><th><center>Raza</center></th><th><center>Estado</center></th></tr></thead><tbody>";
 		while($row=$ejecutar1->fetch_assoc()){
 			//$row2=$ejecutar2->fetch_assoc();
 			$imgData=mysqli_fetch_array($ejecutar2);
