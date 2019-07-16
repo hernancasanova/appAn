@@ -6,22 +6,31 @@ $result=array();
 if ($mysqli->connect_errno) {
 	echo "No se ha podido conectar";
 }else{
-	$sql="SELECT * FROM vacunos";
-	$sql2="SELECT * FROM imagenes";
+	$sql="SELECT * FROM vacunos v,imagenes i WHERE v.numero=i.numero AND v.estado='Vivo'";
+	//$sql2="SELECT * FROM imagenes";
 	$ejecutar1= $mysqli->query($sql);
-	$ejecutar2= $mysqli->query($sql2);
+	//$ejecutar2= $mysqli->query($sql2);
 	//$datos=$mysqli->$ejecutar1;
 	//if (mysql_num_rows($ejecutar1)>0) {
 	if ($ejecutar1->num_rows>0) {
+		//echo "<table id='tab1'><thead><tr><th><center>Imagen</center></th><th>Numero</th><th><center>Nombre</center></th><th><center>Fecha de nacimiento estimada</center></th><th><center>Sexo</center></th><th><center>Raza</center></th><th><center>Estado</center></th></tr></thead><tbody>";
 		echo "<table id='tab1'><thead><tr><th><center>Imagen</center></th><th>Numero</th><th><center>Nombre</center></th><th><center>Fecha de nacimiento estimada</center></th><th><center>Sexo</center></th><th><center>Raza</center></th><th><center>Estado</center></th></tr></thead><tbody>";
 		while($row=$ejecutar1->fetch_assoc()){
 			//$row2=$ejecutar2->fetch_assoc();
-			$imgData=mysqli_fetch_array($ejecutar2);
+			//$imgData=mysqli_fetch_array($ejecutar2);
 			//array_push($result, $row["numero"],$row["nombre"]);
 			//echo "<tr><td>".$row["numero"]."</td><td>".$row["nombre"]."</td>
 			//echo "<tr><td>".$imgData["imagen"]."</td><td>".$row["numero"]."</td><td>".$row["nombre"]."</td>
-			echo "<tr><td><center><a href='php/ObtieneImagen.php?id=".$imgData["numero"]."'><img src='php/ObtieneImagen.php?id=".$imgData["numero"]."' width='50px' height='50px'></a></td><td><center>".$row["numero"]."</td><td><center>".$row["nombre"]."</td>
+
+			echo "<tr><td><center><a href='php/ObtieneImagen.php?id=".$row["numero"]."'><img src='php/ObtieneImagen.php?id=".$row["numero"]."' width='50px' height='50px'></a></td><td><center>".$row["numero"]."</td><td><center>".$row["nombre"]."</td>
 			<td><center>".$row["fecha_nacimiento_estimada"]."</td><td><center>".$row["sexo"]."</td><td><center>".$row["raza"]."</td><td><center>".$row["estado"]."</td></tr>";
+
+			/*echo "<tr><td><center><a href='php/ObtieneImagen.php?id=".$imgData["numero"]."'><img src='php/ObtieneImagen.php?id=".$imgData["numero"]."' width='50px' height='50px'></a></td><td><center>".$row["numero"]."</td><td><center>".$row["nombre"]."</td>
+			<td><center>".$row["fecha_nacimiento_estimada"]."</td><td><center>".$row["sexo"]."</td><td><center>".$row["raza"]."</td><td><center>".$row["estado"]."</td></tr>";*/
+
+			/*echo "<tr><td><center><a href='php/ObtieneImagen.php?id=".$imgData["numero"]."'>hola<img src='".base64_encode($i=php/ObtieneImagen.php?id=".$imgData["numero"].");." '  width='50px' height='50px'></a></td><td><center>".$row["numero"]."</td><td><center>".$row["nombre"]."</td>
+			<td><center>".$row["fecha_nacimiento_estimada"]."</td><td><center>".$row["sexo"]."</td><td><center>".$row["raza"]."</td><td><center>".$row["estado"]."</td></tr>";*/			
+
 		}	
 		echo "</tbody></table>";
 	}
